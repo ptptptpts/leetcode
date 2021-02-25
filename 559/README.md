@@ -28,5 +28,5 @@ If the element is 10, change it to 0 and add one to the next one.
 
 Because the length of digits can be increased, add it first on the input digit and copy it to the new digits array with the updated MSD.
 
-- Time complexity: O(nlogn)
+- Time complexity: O(n)
 - Space complexity: O(1)
