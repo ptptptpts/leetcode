@@ -59,3 +59,19 @@ The Space complexity is O(1), because it saves only a number of the maximum cros
 If the p1, p2, and p3 are in the same straight line, we don't need to compare them on the further loop.  
 So, we can save all the points in the linked list, and remove the points that we already find from the other straight line.  
 This will reduce a number of points we need to compare in loop, but still Time complexity is O(n^3) in the worst case.
+
+## Solution 2
+
+Let's assume we compare all the slopes from p1 and the other points.  
+Because we have a static point p1, the points that have the same slope will on the same straight line.  
+So, we can check all the straight lines by repeating this job in all the points in the input.  
+In each loop, we need to save each slope to count a number of points have the same slope.
+
+Moreover, because the straight line that contains the previous point is already checked by the previous point, we can check all the points next after a current static point.
+
+The Time complexity is O(n^2), because it checks all slopes between each points.
+
+The Space complexity is O(n), because we need to save the slopes on each points in each loop.
+
+- Time complexity: O(n^2)
+- Space complexity: O(n)
