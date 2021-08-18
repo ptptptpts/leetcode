@@ -12,5 +12,5 @@
 
 ## Solution 1
 
-- Time complexity: O()
-- Space complexity: O(1)
+* Time complexity: O()
+* Space complexity: O(1)
